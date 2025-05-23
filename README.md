@@ -1,18 +1,26 @@
-# 友誼信託
-這是一個使用 XAMPP 架設的 PHP 網站專案，包含前端 HTML/CSS、後端 PHP 程式碼，以及使用 MySQL 的資料庫。
-目的是可在上面進行借還款的登記，可新增對方為聯絡人並進行借還款的資料新增。
-以下連結是實際操作示範影片。
-https://youtu.be/6mjttFKjilo
+# 友誼信託 Friend Fiduciary
 
+這是一個使用 XAMPP 架設的 PHP 網站專案，包含前端 HTML/CSS、後端 PHP 程式碼，以及使用 MySQL 的資料庫。
+
+目的是提供一個簡易的「借還款登記」平台，使用者可以：
+- 新增聯絡人
+- 登記借款或還款紀錄
+- 查看通知與交易狀態
+- 
+🎬 [實際操作示範影片](https://youtu.be/6mjttFKjilo)
+
+
+```markdown
 ## 📁 專案結構
+```plaintext
 ff/
-├── css/                         # 樣式表（CSS）
-├── img/                         # 圖片資源
-├── navmenu/                     # 導覽列模組
-├── php/                         # 模組化後端 PHP 函式（可能是 include）
-├── scripts/                     # JavaScript 腳本（如有）
+├── css/ # 樣式表（CSS）
+├── img/ # 圖片資源
+├── navmenu/ # 導覽列模組
+├── php/ # 模組化 PHP 函式
+├── scripts/ # JavaScript
 ├── db/
-│   └── friend_fiduciary.sql     # 資料庫備份檔（MySQL）
+│ └── friend_fiduciary.sql # MySQL 資料庫備份
 │
 ├── addcontact.php
 ├── addloanrecord.php
@@ -30,26 +38,26 @@ ff/
 ├── en_change_state_o.php
 ├── en_check_login.php
 ├── en_contact.php
-├── en_index.php                 # 英文首頁
+├── en_index.php # 英文首頁
 ├── en_logout.php
 ├── en_main.php
 ├── en_record.php
 ├── en_updatecontact.php
 ├── en_updatepassword.php
 ├── en_user_register.php
-├── index.php                    # 中文首頁（或登入首頁）
+├── index.php # 中文首頁
 ├── logout.php
 ├── main.php
 ├── record.php
 ├── updatecontact.php
 ├── updatepassword.php
-├── user_register.php
 ├── updatemail.php
-├── updatepassword.php
 ├── user.php
 ├── user_register.php
 ├── wait.php
 └── README.md
+```
+```
 
 ## 🚀 使用方式
 
@@ -69,7 +77,6 @@ http://localhost/ff/
 
 
 ## 🧰 使用技術
-
 - PHP 8.x
 - HTML5 / CSS3 / JavaScript
 - MySQL / phpMyAdmin
