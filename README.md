@@ -7,11 +7,11 @@
 - 登記借款或還款紀錄
 - 查看通知與交易狀態
   
-🎬 [實際操作示範影片](https://youtu.be/6mjttFKjilo)
+[實際操作示範影片](https://youtu.be/6mjttFKjilo)
 
 
 ```markdown
-## 📁 專案結構
+## 專案結構
 ff/
 ├── css/ 
 ├── img/ 
@@ -58,7 +58,7 @@ ff/
 ```
 ```
 
-## 🚀 使用方式
+## 使用方式
 
 1. 安裝 [XAMPP](https://www.apachefriends.org/)
 2. 啟動 Apache 與 MySQL
@@ -75,13 +75,13 @@ C:\xampp\htdocs\ff\
 http://localhost/ff/
 
 
-## 🧰 使用技術
+## 使用技術
 - PHP 8.x
 - HTML5 / CSS3 / JavaScript
 - MySQL / phpMyAdmin
 - Apache（XAMPP）
 
-## 📦 資料庫說明
+## 資料庫說明
 請確認已匯入 `/db/friend_fiduciary.sql`，它包含以下資料表：
 
 - `user`：使用者帳號資訊
