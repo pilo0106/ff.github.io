@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Klee+One&family=Neucha&family=Noto+Serif+TC&family=RocknRoll+One&family=Shippori+Mincho+B1&family=Titillium+Web:wght@300;400&display=swap');
+
+/*base*/
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, hgroup, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*base end*/
+/*all*/
+*{
+    font-size:1.5vw;
+    padding: 0;
+}
+body{
+    font-family: 'Shippori Mincho B1';
+    margin: 0;
+    background-color: rgb(247, 233, 227);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/*all end*/
+/*header*/
+.header{
+    display: flex;
+    margin: 0;
+    position: relative;
+    justify-content: space-between;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    direction: column;
+    box-shadow: 0 0.8rem 1.5rem rgba(160, 118, 64, 0.1);
+    border:1px solid rgb(255, 222, 179);
+}
+.header a+a{
+    border-left: 0.016rem solid rgb(220, 220, 220);
+}
+.logo{
+    text-align: center;
+    display: flex; 
+}
+.logo a{
+    color:#333;
+	text-decoration: none;
+    float: right;
+    text-align: center;
+    padding: 0.3rem;
+    margin-left: 5vw;
+    font-family: "Amatic SC";
+    letter-spacing: 0.1rem;
+    transition: all 0.5s 0s ;
+}
+.logo img{
+    max-width: 6rem;
+    max-height: 6rem;
+}
+
+.menubox{
+    align-self: flex-end;
+    overflow: hidden;
+    margin-left: 5vw;
+    display: flex;
+    
+}
+.menubox a{
+    color:#333;
+	text-decoration: none;
+    float: right;
+    text-align: center;
+    padding: 1.67rem 3vw;
+    transition: all 0.5s 0s ;
+}
+.menubox a:hover, .logo a:hover,#rightmenu a:hover{
+    background-color: rgb(255, 249, 194);
+    color: rgb(255, 133, 67);
+}
+#rightmenu{
+    margin-right: 2vw;
+    display: flex;
+}
+#rightmenu a{
+    padding: 1.67rem 2vw;
+    float: inline-end;
+    transition: all 0.5s 0s ;
+}
+.page-main{
+    display: none;
+}
+/*header end*/
+/*main*/
+.danger{
+    color:rgb(255, 117, 67);
+    z-index: 20;
+    font-size: 0.74rem;
+}
+/*main end*/
+/*footer*/
+.footer{
+    display: flex;
+    margin-top: 3rem;
+    height: 5rem;
+    padding-left: 6rem;
+    position: relative;
+    background-color: rgba(225, 196, 177, 0.3);
+}
+.en_footer{
+    display: flex;
+    margin-top: 3rem;
+    height: 5rem;
+    padding-left: 3.5rem;
+    position: relative;
+    background-color: rgba(225, 196, 177, 0.3);
+}
+.footerbox{
+    align-self: flex-end;
+    overflow: hidden;
+    margin:auto;
+    display: flex;
+}
+.footerbox a{
+    color:rgb(146, 146, 146);
+	text-decoration: none;
+    float: right;
+    text-align: center;
+    padding: 0.8rem 1vw;
+    transition: all 0.5s 0s ;
+    font-size: 0.7rem;
+    border:1px solid rgb(255, 245, 235);
+    border-radius: 0.24rem;
+}
+.footerbox a:hover{
+    /*background-color: rgb(255, 249, 194);*/
+    color: rgb(224, 119, 61);
+    border:1px solid rgb(224, 119, 61);   
+}
+.footerboxpst{
+    margin:1rem;
+    left:3rem;
+}
+.footerboxmdn{
+    padding: 1rem;
+    /*border:0.5px solid rgba(225, 196, 177, 0.8);*/
+    border-radius: 0.24rem;
+    margin: 1rem;
+    left:3rem;
+}
+.footerboxmdn a{
+    color:rgb(222, 187, 164);
+	text-decoration: none;
+    justify-content: center;
+    align-items: center;  
+    font-family: "Amatic SC";
+    letter-spacing: 0.2rem;
+    transition: all 0.5s 0s ;
+    
+}
+.footerboxmdn a:hover{
+    /*background-color: rgb(255, 249, 194);*/
+    color: rgb(224, 119, 61);
+}
+/*footer end*/
+
+@media screen and (max-width:600px) {
+    /*body{
+        background-color: rgb(225, 225, 240); 
+    }*/
+    .danger{
+        font-size:3rem;
+    }
+    #rightmenu, .menubox{
+        display: none;
+    }
+    .logo a{
+        padding: 0.3rem;
+        margin-left: 15vw;
+        letter-spacing: 0.1rem;
+        font-size: 4rem;
+    }
+    .logo img{
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+    /*slide*/
+ 
+    button {
+        outline: none;
+    }
+    .page-main {
+        position: relative;
+        display: flex;
+        z-index: 111;
+    }
+    .page-main ul li a{
+        color:#fff;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    .page-main li{
+        padding-top: 3rem;
+        text-align: center;
+    }
+    .page-main ul li a:hover{
+        color:rgb(224, 119, 61);
+        text-decoration: none;
+    }
+    .page-main > aside {
+        background-color: rgba(92, 92, 92, 0.8);
+        width: 350px;
+        height: 100%;
+        top: 0;
+        left: -350px;
+        position: fixed;
+    }
+    
+    .page-main > aside ul {
+        margin: 0;
+        padding: 0;
+        top: 50px;
+        left: 114px;
+        position: absolute;
+    }
+    
+    .page-main > aside li {
+        margin: 0 0 20px;
+        list-style: none;
+    }
+    
+    .page-main > aside button {
+        background-color: rgba(192, 192, 192, 0.7);
+        box-shadow: 3px 0 3px rgba(125, 125, 125, 0.5);
+        border-radius: 0 2rem 2rem 0;
+        display: block;
+        position: absolute;
+        top: 150px;
+        left: 350px;
+        width: 20px;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .qq{
+        color: rgb(255, 255, 255);
+        font-size: 2.5rem;
+    }
+    
+    /* Clearfix */
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+    .clearfix:after {
+        clear: both;
+    }
+    /*slide end*/
+    /*footer*/
+    .footer{
+        margin-top: 5rem;
+        height: 15rem;
+        padding-left: 6rem;
+    }
+    .en_footer{
+        margin-top: 3rem;
+        height: 12rem;
+        padding-left: 3.5rem;
+    }
+    .footerboxmdn{
+        margin-left: 7rem;
+    }
+    .footerboxmdn a{
+        font-size: 3rem
+    }
+    /*footer end*/
+}

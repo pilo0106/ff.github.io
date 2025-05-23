@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Klee+One&family=Neucha&family=Noto+Serif+TC&family=RocknRoll+One&family=Shippori+Mincho+B1&family=Titillium+Web:wght@300;400&display=swap');
+
+.logintext a{
+    color:rgb(162, 162, 162);
+	  text-decoration: none;
+    font-size: 0.84rem;
+}
+.logintext a:hover{
+    color: rgb(255, 133, 67);
+}
+.form {
+    background-color: white;
+    text-align: center;
+    width: 13.4rem;
+    height:19.34rem;
+    border-radius: 0.34rem;
+    padding: 0.67rem 1.34rem;
+    box-shadow: 0 0.4rem 0.84rem rgba(92, 99, 105, .2);
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+.signupFrm {
+    display: flex;
+    flex-direction:column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 1.67rem;
+    margin-bottom: 2.34rem;
+    color: #585858;
+}
+  .inputContainer {
+    position: relative;
+    height: 1.5rem;
+    width:12.7rem;
+    margin-bottom: 0.57rem;
+}
+
+  /* 设置输入框的样式 */
+
+.input {
+    font-family: 'RocknRoll One';
+    position: relative ;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    border: 1px solid #bdbfc3;
+    border-radius: 0.24rem;
+    font-size: 0.74rem;
+    padding: 0.1rem 1.67rem;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  /* 隐藏占位符文本（a）*/
+  
+  ::placeholder {
+    color: transparent;
+  }
+
+  /* 设置文本标签的样式 */
+
+.label {
+    position: absolute;
+    top: 0.34rem;
+    left: 0.34rem;
+    padding: 0.014rem;
+    color: #b4b6ba;
+    font-size: 0.54rem;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  .submitBtn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 0.67rem;
+    margin-top: 1rem;
+    font-family: 'Shippori Mincho B1';
+  }
+  .Btn{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .submitBtn:hover {
+    background-color: rgb(255, 246, 161) ;
+    color: rgb(255, 133, 67);
+    transform: translateY(-0.067rem);
+  }
+
+  .input:focus + .label {
+    top: -0.24rem;
+    left: 0.1rem;
+    z-index: 10;
+    font-size: 0.47rem;
+    font-weight: 600;
+    color: rgb(255, 133, 67);
+  }
+
+  .input:focus {
+    border: 0.067rem solid rgb(255, 178, 137);
+  }
+
+  .input:not(:placeholder-shown)+ .label {
+    top: -0.24rem;
+    left: 0.1rem;
+    z-index: 10;
+    font-size: 0.47rem;
+    font-weight: 600;
+  }
+  .angle{
+    position: relative;
+    display: flex;
+    height: 0vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 5;
+    top:-10rem;
+    left:-20rem;
+  }
+  .devil{
+    position: relative;
+    display: flex;
+    height: 0vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    z-index: 5;
+    top:-10rem;
+    left:20rem;
+  }
+  .angle, .devil{
+    -webkit-animation: fadeEffect 2.5s;
+    animation: fadeEffect 2.5s;
+  }
+  .angle img, .devil img{
+    max-width: 20rem;
+    max-height: 20rem;
+  }
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .inputContainer svg{
+    width:1rem; 
+    height:1rem;
+  }
+
+  @media screen and (max-width:600px) {
+    .form {
+      width:49.04rem;
+      height:60rem;
+      border-radius: 6.34rem;
+    }
+    .title{
+      font-size:5rem;
+    }
+    .logintext a{
+      font-size: 3.4rem;
+  }
+    .inputContainer {
+      position: relative;
+      height: 5.5rem;
+      width:35.7rem;
+      margin-bottom: 2rem;
+      left:5.5rem;
+  }
+  
+    /* 设置输入框的样式 */
+  
+  .input {
+      font-size: 3.5rem;
+      padding-left: 8rem;
+      border: 1px solid #bdbfc3;
+      border-radius: 1rem;
+    }
+
+    .submitBtn {
+      padding: 1rem 2rem;
+      font-size: 3.2rem;
+      margin-top: 2rem;
+      border-radius: 1rem;
+    }
+
+    .inputContainer svg{
+      width:4.2rem; 
+      height:4.2rem;
+    }
+    .label{
+      left: 2rem;
+      top:1rem;
+    }
+    .angle{
+      /*top:-83rem;
+      left:-22rem;
+      rotate: 10deg;*/
+      display: none;
+    }
+    .devil{
+      /*top:-31rem;
+      left:20rem;
+      rotate: 10deg;*/
+      display: none;
+    }
+    .input:focus {
+      border: 0.25rem solid rgb(255, 178, 137);
+    }
+    
+  }

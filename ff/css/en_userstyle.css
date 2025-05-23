@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Klee+One&family=Neucha&family=Noto+Serif+TC&family=RocknRoll+One&family=Shippori+Mincho+B1&family=Titillium+Web:wght@300;400&display=swap');
+.user{
+    margin:0;
+    background-color: rgb(244, 226, 214);
+    
+    width: 26.87rem; 
+    height:23.34rem;
+    padding: 0.67rem 1.34rem;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+.userposition{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+
+.page{
+    margin:0 auto;
+    width: 23.34rem;
+    
+    display: flex;
+    position: relative;
+    border-radius: 0.34rem;
+    padding: 0px 1.67rem;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+.tabcontent {
+    background-color: white;
+    border-radius: 0.34rem;
+    width: 33.34rem;
+    height: 16.67rem;
+    display: none;
+    text-align: center;
+    position: relative;
+    padding: 0.2rem 0.4rem;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+/*dropdown menu*/
+
+li a {
+    text-decoration : none; 
+    color : #575757;
+    font-size : 0.74rem;
+    
+}
+
+.slide li :hover {
+    background-color: rgb(255, 249, 194);
+    color: rgb(255, 133, 67);
+    box-shadow: 0 0 0.84rem 0.34rem rgb(255, 249, 194, 0.8);
+}
+
+nav {
+    width : 7.67rem;
+    height:0;  
+    background-color: rgb(255, 255, 255);
+    margin : 2rem 6.67rem;
+    position: absolute; 
+    z-index: 10;
+    box-shadow: 0 0.34rem 0.84rem rgba(92, 99, 105, .2);
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+span {
+    padding : 0.84rem;
+    background : #7d7d7d; 
+    color : rgb(255, 255, 255);
+    font-size : 0.74rem;
+    font-variant : small-caps;
+    cursor : pointer;
+    display: block;
+    box-shadow: 0 0.34rem 0.84rem rgba(92, 99, 105, .2);
+}
+
+span::after {
+    float: right;
+    right: 10%;
+    content: "+";
+}
+
+.slide {
+    margin: 0 auto 0;
+    position: relative;
+    clear:both;
+    width:100%;
+    height:0px;
+    /*top: -30px;*/
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+    background-color: rgb(255, 255, 255);
+}
+
+.slide li {
+    padding : 0.67rem;
+}
+
+#touch {
+    position: absolute; 
+    opacity: 0; 
+    height: 0;
+}    
+#touch:checked + .slide {
+    height: 5.34rem;
+} 
+/*dropdown menu end*/
+/*menubutton*/
+.menubutton{
+    margin: auto;
+    font-family: 'Shippori Mincho B1';
+    font-weight:lighter;
+    background-color:white;
+    font-size: 0.77rem;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+  .input, .input2 {
+    font-family: 'Shippori Mincho B1';
+    position: relative ;
+    top: 2rem;
+    left: 5.94rem;
+    height: 100%;
+    width: 85%;
+    border: 0.034rem solid #bdbfc3;
+    border-radius: 0.23rem;
+    font-size: 0.64rem;
+    padding: 0.1rem 1.87rem;
+    outline: none;
+    background: none;
+    z-index: 1;
+    letter-spacing:0.02rem
+  }
+  
+  .input:focus + .label , .input2:focus + .label {
+    top: -0.24rem;
+    left: 0.1rem;
+    z-index: 10;
+    font-size: 0.47rem;
+    font-weight: 600;
+    color: rgb(255, 133, 67);
+  }
+
+  .input:focus, .input2:focus {
+    border: 0.067rem solid rgb(255, 178, 137);
+  }
+
+  .input:not(:placeholder-shown)+ .label, .input2:not(:placeholder-shown)+ .label {
+    top: -0.24rem;
+    left: 0.1rem;
+    z-index: 10;
+    font-size: 0.47rem;
+    font-weight: 600;
+  }
+  
+  .Btn{
+    display: flex;
+    justify-content: center; 
+    top: 2rem;
+    left: 7.1rem;
+  }
+  
+  .submitBtn {
+    display: block;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 0.67rem;
+    margin-top: 1rem;
+    font-family: 'Shippori Mincho B1';
+  }
+  .submitBtn:hover {
+    background-color: rgb(255, 246, 161) ;
+    color: rgb(255, 133, 67);
+    transform: translateY(-0.067rem);
+  }
+  ::placeholder {
+    color: rgb(213, 213, 213);
+  }
+  .inputContainer, .inputContainer2{
+    position: relative;
+    height: 1.5rem;
+    width:8.3rem;
+    margin-bottom: 0.87rem;
+  }
+  .label {
+    position: absolute;
+    display: block;
+    top: 2.34rem;
+    left: 6.34rem;
+    padding: 0.014rem;
+    color: #b4b6ba;
+    font-size: 0.54rem;
+    transition: 0.5s;
+    z-index: 0;
+  }
+  table svg{
+    color:rgb(162, 162, 162);
+    text-decoration: none;
+  }
+  table svg:hover {
+    color: rgb(255, 133, 67);
+    transform: translateY(-0.067rem);
+  }
+  .inputContainer svg{
+    width:1.2rem;
+    height:1.2rem;
+  }
+  .inputContainer2 svg{
+    width:1.04rem;
+    height:1.04rem;
+  }
+  @media screen and (max-width:600px) {
+    span {
+      width: 30rem;
+      padding : 3rem;
+      font-size : 3.74rem;
+    }
+    .menubutton{
+      margin-top: 2rem;
+      font-size: 3.5rem;
+    }
+    #touch:checked + .slide {
+      height: 20rem;
+      width: 36rem;
+    }
+    .slide {
+      width: 36rem;
+    }
+    .user{
+      width: 55rem; 
+      height:120rem;
+      padding: 0.67rem 1.34rem;
+    }
+    .page{
+      top: 35rem;
+      width: 57rem;
+      border-radius: 0.34rem;
+      padding: 0 1.67rem;
+      left:-2.5rem;
+
+    }
+    .inputContainer, .inputContainer2{
+      left:12rem;
+      height: 1.5rem;
+      width:8.3rem;
+      margin-bottom: 0.87rem;
+    }
+    .input:focus, .input2:focus {
+      border: 0.25rem solid rgb(255, 178, 137);
+    }
+    .input{
+      left: -7rem;
+      border-radius: 1.24rem;
+      font-size: 4rem;
+      width: 29rem;
+      height: 5rem;
+      padding: 1rem;
+      padding-left: 7rem;
+    }
+    .input2{
+      left: -7rem;
+      border-radius: 1.24rem;
+      font-size: 4rem;
+      width: 29rem;
+      height: 5rem;
+      margin-top: 7rem;
+      padding: 1rem;
+      padding-left: 7rem;
+    }
+    .tabcontent {
+      padding: 3rem;
+      margin: 2.1rem 2rem;
+      height: 50rem;
+      width: 100%;
+      border-radius: 3.24rem;
+    }
+    .tabcontent p{
+      font-size: 5rem;
+    }
+    .submitBtn {
+      padding: 1.2rem 2rem;
+      border-radius: 1.2rem;
+      font-size: 3.3rem;
+      margin-top: 5rem;
+    }
+    .inputContainer svg{
+      width:5.3rem;
+      height:5.3rem;
+    }
+    .inputContainer2 svg{
+      width:5rem;
+      height:5rem;
+    }
+    .inputContainer .label {
+      top: 3rem;
+      left: -6rem;
+      padding: 0.014rem;
+    }
+    .inputContainer2 .label {
+      top: 10rem;
+      left: -6rem;
+      padding: 0.014rem;
+    }
+  }

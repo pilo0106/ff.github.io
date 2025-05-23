@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Neucha&family=Noto+Serif+TC&family=RocknRoll+One&family=Shippori+Mincho+B1&family=Titillium+Web:wght@300;400&display=swap');
+
+.record{
+    margin: 3.34rem auto 3.34rem auto;
+    background-color: white;
+    width: 35.34rem; 
+    height:30rem;
+    border-radius: 0.34rem;
+    padding: 0.67rem 1.34rem;
+    box-shadow: 0 0.34rem 0.84rem rgba(92, 99, 105, .2);
+    overflow-x:hidden;
+    overflow-y:scroll;
+    -webkit-animation: fadeEffect 0.5s;
+    animation: fadeEffect 0.5s;
+}
+.recordposition{
+    display: flex;
+    position: relative;
+    flex-direction:column;
+    /*height: 150vh;*/
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+.page{
+    margin:auto;
+    display: flex;
+    position: relative;
+    border-radius: 0.34rem;
+
+    overflow-x:hidden;
+    overflow-y:hidden;
+    /*border: 1px solid #d1cabd;*/
+}
+/* tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(235, 235, 235);
+  background-color: #f1f1f1;
+}
+
+.tab_pst1{
+  float: left;
+}
+.tab_pst2{
+  float: right;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  /*float: left;*/
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.47rem 0.54rem;
+  transition: 0.3s;
+  font-size: 0.7rem;
+  font-family: 'Shippori Mincho B1';
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(255, 249, 194);
+    color: rgb(255, 133, 67);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(107, 107, 107);
+  color: rgb(255, 255, 255);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  text-align: center;
+  position: relative;
+  height: 23rem;
+  padding: 0.2rem 0.4rem;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+/*tab end*/
+
+table {
+  margin: 1rem auto;
+  display: flex;
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 0.034rem solid #dddddd;
+  text-align: center;
+  font-size: 0.84rem;
+  padding: 0.5rem;
+  font-weight:lighter;
+}
+th{
+  white-space:nowrap;
+  background-color: rgb(242, 242, 242);
+  color:rgb(96, 96, 96);
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  /*margin: auto;*/
+  display: none;
+  text-align: center;
+  position: relative;
+  padding: 2rem 0.4rem;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  margin: 0.1rem auto;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*tab end*/
+
+/**/
+.input {
+  font-family: 'Shippori Mincho B1';
+  position: relative ;
+  top: 0rem;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  border: 1px solid #d1cabd;
+  border-radius: 0.24rem;
+  font-size: 0.74rem;
+  padding: 0.1rem 1.67rem;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+.input2 {
+  font-family: 'Shippori Mincho B1';
+  position: relative ;
+  top: 0rem;
+  left: 0;
+  height: 100%;
+  width: 80%;
+  border: 1px solid #d1cabd;
+  border-radius: 0.24rem;
+  font-size: 0.74rem;
+  padding:0.5rem 1.87rem;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+.input:focus + .label {
+  top: -0.24rem;
+  left: 0.1rem;
+  z-index: 10;
+  font-size: 0.47rem;
+  font-weight: 600;
+  color: rgb(255, 133, 67);
+}
+
+.input:focus {
+  border: 0.067rem solid rgb(255, 178, 137);
+}
+
+.input:not(:placeholder-shown)+ .label {
+  top: -0.24rem;
+  left: 0.1rem;
+  z-index: 10;
+  font-size: 0.47rem;
+  font-weight: 600;
+}
+.input2:focus + .label {
+  top: -0.24rem;
+  left: 0.1rem;
+  z-index: 10;
+  font-size: 0.47rem;
+  font-weight: 600;
+  color: rgb(255, 133, 67);
+}
+
+.input2:focus {
+  border: 0.067rem solid rgb(255, 178, 137);
+}
+
+.input2:not(:placeholder-shown)+ .label {
+  top: -0.24rem;
+  left: 0.1rem;
+  z-index: 10;
+  font-size: 0.47rem;
+  font-weight: 600;
+}
+.inputContainer {
+  top:1rem;
+  position: relative;
+  left:-0.5rem;
+  /*height: 1.5rem;
+  width:8.3rem;*/
+  margin-bottom: 0.87rem;
+}
+.inputContainer1 {
+  top:0.98rem;
+  left:3.7rem;
+  position: relative;
+  /*height: 1.5rem;
+  width:8.3rem;*/
+  margin-bottom: 0.87rem;
+}
+.inputContainer2 {
+  top:3.2rem;
+  left:-3rem;
+  position: relative;
+  /*height: 1.5rem;
+  width:8.3rem;*/
+  margin-bottom: 0.87rem;
+  
+}
+.label1 {
+  position: absolute;
+  display: block;
+  top: 0.15rem;
+  left: 3.5rem;
+  padding: 0.014rem;
+  color: #b4b6ba;
+  font-size: 0.54rem;
+  transition: 0.5s;
+  z-index: 0;
+}
+.label2 {
+  position: absolute;
+  display: block;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.014rem;
+  color: #b4b6ba;
+  font-size: 0.54rem;
+  transition: 0.5s;
+  z-index: 0;
+}
+::placeholder {
+  color: rgb(213, 213, 213);
+}
+table svg{
+  color:rgb(162, 162, 162);
+  text-decoration: none;
+}
+.Btn{
+  display: flex;
+  justify-content: center;
+  left:0.8rem; 
+}
+.submitBtn {
+  display: block;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  background-color: rgb(80, 80, 80);
+  color: white;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: 0.87rem;
+  margin-top: 1rem;
+  font-family: 'Shippori Mincho B1';
+}
+.submitBtn:hover {
+  background-color: rgb(255, 246, 161) ;
+  color: rgb(255, 133, 67);
+  transform: translateY(-0.067rem);
+}
+select{
+  border-radius: 0.2rem;
+  padding: 0.15rem;
+  font-size: 0.67rem;
+  font-family: 'RocknRoll One';
+  border: 0.03rem solid #d1cabd;
+}
+.rcdtext{
+  padding: 0.4rem;
+  margin: auto;
+  border-bottom: 0.05rem solid #ffd5c0;
+  border-radius: 0.24rem;
+  /*background-color: rgb(255, 252, 245);*/
+}
+.changebtn{
+  font-family: 'Shippori Mincho B1';
+  border: 00rem solid #ffd5c0;
+  font-size: 0.87rem;
+  background-color: white;
+  color: rgb(215, 157, 119);
+}
+.changebtn:hover{
+  color: rgb(179, 93, 93);
+}
+.cg_color{
+  color: rgb(85, 182, 85);
+}
+.loan_cdt_color{
+  color: rgb(171, 171, 171);
+}
+#mny_color{
+  color: rgb(197, 166, 25);
+}
+
+
+@media screen and (max-width:600px) {
+  .record{
+    margin: 8.34rem auto 25rem auto;
+    width: 55rem; 
+    height:90rem;
+    border-radius: 2.34rem;
+    padding: 0.67rem 1.34rem;
+    box-shadow: 0 0.34rem 0.84rem rgba(92, 99, 105, .2);
+    
+  }
+  .tab_pst2{
+    float: right;
+  }
+  .tab button {
+    
+    padding: 1.7rem 1.54rem;
+    font-size: 2.8rem;
+  }
+  .tab {
+    margin-top: 0.2rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    background-color: #f1f1f1;
+  }
+  .tabcontent {
+    overflow-x:scroll;
+    padding: 3rem;
+    margin: 2.1rem 2rem;
+    height: 100%;
+    width: 100%;
+  }
+  td, th , .changebtn{
+    text-align: center;
+    font-size: 3rem;
+    padding: 3rem 1rem;
+  }
+  table svg{
+    width:3.67rem;
+    height:2.67rem;
+  }
+  .input2 {
+    margin-top: 1rem;
+    border-radius: 1.24rem;
+    font-size: 3rem;
+    padding: 1rem 3rem;
+  }
+  .input{
+    left:-3.6rem;
+    margin-top: 3rem;
+    border-radius: 1.24rem;
+    font-size: 3rem;
+    padding: 1rem 5rem;
+  }
+  .rcdtext{
+    font-size: 4.5rem;
+  }
+  .submitBtn {
+    padding: 1.2rem 2rem;
+    border-radius: 1.2rem;
+    font-size: 3.3rem;
+    margin-top: 5rem;
+  }
+  select{
+    border-radius: 0.2rem;
+    padding: 0.15rem;
+    font-size: 3.5rem;
+    margin-left:5rem;
+    margin-top: 3rem;
+  }
+  select option{
+    font-size: 5rem;
+  }
+  .input:focus {
+    border: 0.25rem solid rgb(255, 178, 137);
+  }
+  .input2:focus {
+    border: 0.25rem solid rgb(255, 178, 137);
+  }
+  .echo_tx{
+    font-size: 5.5rem;
+  }
+}
