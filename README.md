@@ -13,13 +13,13 @@
 ```markdown
 ## 📁 專案結構
 ff/
-├── css/ # 樣式表（CSS）
-├── img/ # 圖片資源
-├── navmenu/ # 導覽列模組
-├── php/ # 模組化 PHP 函式
-├── scripts/ # JavaScript
+├── css/ 
+├── img/ 
+├── navmenu/ 
+├── php/ 
+├── scripts/
 ├── db/
-│ └── friend_fiduciary.sql # MySQL 資料庫備份
+│ └── friend_fiduciary.sql # MySQL資料庫備份
 │
 ├── addcontact.php
 ├── addloanrecord.php
